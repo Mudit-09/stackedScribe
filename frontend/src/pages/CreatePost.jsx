@@ -12,7 +12,7 @@ const CreatePost = () => {
         e.preventDefault();
         try {
             // Send the new post data to our protected route
-            await axios.post('https://stacked-scribe-fk0p2xpdd-mudits-projects-202faad5.vercel.app/api/posts', {
+            await axios.post('https://stacked-scribe.vercel.app/api/posts', {
                 title,
                 content,
                 coverImage

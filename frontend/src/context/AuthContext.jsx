@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
 
     // Login function
     const login = async (email, password) => {
-        const res = await axios.post('https://stacked-scribe-fk0p2xpdd-mudits-projects-202faad5.vercel.app/api/auth/login', { email, password });
+        const res = await axios.post('https://stacked-scribe.vercel.app/api/auth/login', { email, password });
         
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('user', JSON.stringify(res.data.user));
